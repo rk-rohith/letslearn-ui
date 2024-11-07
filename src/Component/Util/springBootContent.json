@@ -1,0 +1,186 @@
+{
+    "title": "Spring Boot Overview",
+    "sections": [
+      {
+        "heading": "What is Spring Boot?",
+        "content": "Spring Boot is an open-source framework that simplifies the development of stand-alone, production-grade Spring applications. It is built on top of the Spring Framework and eliminates the boilerplate configuration, allowing developers to start applications quickly and efficiently."
+      },
+      {
+        "heading": "Key Characteristics",
+        "content": [
+          "Convention over Configuration: Favors sensible defaults and minimizes the need for extensive configuration.",
+          "Embedded Servers: Supports embedded servers like Tomcat, Jetty, and Undertow, allowing applications to run independently without needing a separate server installation.",
+          "Production-ready Features: Comes with built-in production features such as metrics, health checks, and externalized configuration."
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "Auto Configuration",
+        "definition": "Automatically configures your Spring application based on the libraries on your classpath.",
+        "example": "If Spring MVC is on the classpath, it automatically sets up a DispatcherServlet.",
+        "howToUse": "Annotate your main application class with `@EnableAutoConfiguration`.",
+        "description": "Spring Boot's auto-configuration feature attempts to automatically configure your Spring application based on the jar dependencies you have added. For example, if you have included Spring MVC, it will automatically configure a DispatcherServlet.",
+        "link": "https://docs.spring.io/spring-boot/docs/current/reference/html/using.html#using.auto-configuration",
+        "moreInfo": "Click more to learn"
+      },
+      {
+        "title": "Spring Boot Starter Projects",
+        "definition": "Starter dependencies that bundle common libraries for specific tasks.",
+        "examples": [
+          "spring-boot-starter-web for web applications.",
+          "spring-boot-starter-data-jpa for Spring Data JPA.",
+          "spring-boot-starter-security for security."
+        ],
+        "mavenDependencyExample": "<dependency>\n    <groupId>org.springframework.boot</groupId>\n    <artifactId>spring-boot-starter-web</artifactId>\n</dependency>",
+        "description": "Spring Boot starters are a set of convenient dependency descriptors you can include in your application. You get a one-stop-shop for all the Spring and related technology you need without having to hunt through sample code and copy-paste loads of dependency descriptors.",
+        "link": "https://docs.spring.io/spring-boot/docs/current/reference/html/using.html#using.build-systems.starters",
+        "moreInfo": "Click more to learn"
+      },
+      {
+        "title": "Spring Boot CLI",
+        "definition": "A command-line interface for running and testing Spring Boot applications.",
+        "usage": "Supports Groovy scripts to quickly create applications without a full Java setup.",
+        "example": "spring run myapp.groovy",
+        "description": "The Spring Boot CLI is a command line tool that you can use to quickly prototype with Spring. It allows you to run Groovy scripts, which means you can get started with Spring Boot without needing to set up a full Java development environment.",
+        "link": "https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started-cli",
+        "moreInfo": "Click more to learn"
+      },
+      {
+        "title": "Spring Boot Actuator",
+        "definition": "Provides built-in endpoints for monitoring and managing Spring Boot applications.",
+        "commonEndpoints": [
+          "/actuator/health: Shows application health status.",
+          "/actuator/info: Provides application metadata, such as version and description."
+        ],
+        "enablingActuator": "<dependency>\n    <groupId>org.springframework.boot</groupId>\n    <artifactId>spring-boot-starter-actuator</artifactId>\n</dependency>",
+        "description": "Spring Boot Actuator provides production-ready features to help you monitor and manage your application. It includes a number of built-in endpoints that you can use to monitor and interact with your application.",
+        "link": "https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html",
+        "moreInfo": "Click more to learn"
+      },
+      {
+        "title": "Externalized Configuration",
+        "definition": "Enables external configuration of your application using properties or YAML files.",
+        "example": "application.properties or application.yml",
+        "keys": "server.port=8081\nspring.datasource.url=jdbc:mysql://localhost:3306/mydb",
+        "description": "Spring Boot allows you to externalize your configuration so you can work with the same application code in different environments. You can use properties files, YAML files, environment variables, and command-line arguments to externalize configuration.",
+        "link": "https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-external-config",
+        "moreInfo": "Click more to learn"
+      },
+      {
+        "title": "Spring Data Integration",
+        "definition": "Simplifies database interactions through Spring Data JPA, aimed at reducing boilerplate code.",
+        "example": "public interface UserRepository extends JpaRepository<User, Long> {\n}",
+        "description": "Spring Data makes it easier to build Spring-powered applications that use data access technologies. It provides a consistent approach to data access, makes it easy to work with different data stores, and reduces the amount of boilerplate code you need to write.",
+        "link": "https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-jpa-and-spring-data",
+        "moreInfo": "Click more to learn"
+      },
+      {
+        "title": "Embedded Servers",
+        "definition": "Applications can run without server configuration, using embedded Tomcat by default.",
+        "customization": "You can change the embedded server or customize its settings in application.properties.",
+        "description": "Spring Boot supports embedded servers, which means you can package your application with a web server (like Tomcat, Jetty, or Undertow) and run it as a standalone application. This makes it easy to deploy and run your application in different environments.",
+        "link": "https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-embedded-container",
+        "moreInfo": "Click more to learn"
+      },
+      {
+        "title": "Dependency Injection",
+        "definition": "A design pattern used to implement IoC, allowing the creation of dependent objects outside of a class and providing those objects to a class.",
+        "example": "public class MyService {\n    private final MyRepository repository;\n\n    @Autowired\n    public MyService(MyRepository repository) {\n        this.repository = repository;\n    }\n}",
+        "description": "Dependency Injection is a fundamental aspect of the Spring Framework, through which the Spring container 'injects' objects into other objects, or 'dependencies'. This allows for loose coupling and easier unit testing.",
+        "link": "https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-dependencies",
+        "moreInfo": "Click more to learn"
+      },
+      {
+        "title": "Inversion of Control (IoC)",
+        "definition": "A principle in which the control flow of a program is inverted, meaning that the framework calls the custom code, rather than the custom code calling the framework.",
+        "example": "public class MyApp {\n    public static void main(String[] args) {\n        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);\n        MyService myService = context.getBean(MyService.class);\n        myService.doSomething();\n    }\n}",
+        "description": "Inversion of Control (IoC) is a core principle of the Spring Framework. It refers to the inversion of the flow of control in a system, where the framework controls the program flow and calls the custom code.",
+        "link": "https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#spring-core",
+        "moreInfo": "Click more to learn"
+      },
+      {
+        "title": "Profiles",
+        "definition": "Allows you to segregate parts of your application configuration and make it only available in certain environments.",
+        "example": "application-dev.properties\nserver.port=8081\n\napplication-prod.properties\nserver.port=80",
+        "description": "Spring Profiles provide a way to segregate parts of your application configuration and make it only available in certain environments. This is useful for having different configurations for development, testing, and production environments.",
+        "link": "https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-profiles",
+        "moreInfo": "Click more to learn"
+      },
+      {
+        "title": "Authentication and Authorization",
+        "definition": "Spring Security provides comprehensive security services for Java applications, including authentication and authorization.",
+        "example": "@Configuration\n@EnableWebSecurity\npublic class SecurityConfig extends WebSecurityConfigurerAdapter {\n    @Override\n    protected void configure(HttpSecurity http) throws Exception {\n        http\n            .authorizeRequests()\n                .antMatchers(\"/public/**\").permitAll()\n                .anyRequest().authenticated()\n                .and()\n            .formLogin()\n                .loginPage(\"/login\")\n                .permitAll();\n    }\n}",
+        "description": "Spring Security is a powerful and highly customizable authentication and access-control framework. It is the de-facto standard for securing Spring-based applications.",
+        "link": "https://docs.spring.io/spring-security/site/docs/current/reference/html5/",
+        "moreInfo": "Click more to learn"
+      },
+      {
+        "title": "Annotations",
+        "definition": "Spring provides a variety of annotations to simplify the configuration and development of Spring applications.",
+        "examples": [
+          "@Component: Indicates that an annotated class is a 'component'.",
+          "@Autowired: Marks a constructor, field, setter method, or config method as to be autowired by Spring's dependency injection facilities.",
+          "@Configuration: Indicates that a class declares one or more @Bean methods and may be processed by the Spring container to generate bean definitions and service requests for those beans at runtime."
+        ],
+        "description": "Spring annotations provide a way to configure your Spring application using metadata. This allows for more concise and readable code, as well as easier configuration and maintenance.",
+        "link": "https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-annotation-config",
+        "moreInfo": "Click more to learn"
+      }
+    ],
+    "gettingStarted": [
+      {
+        "heading": "Setup Development Environment",
+        "content": [
+          "Java Development Kit (JDK): Ensure that JDK 8 or above is installed.",
+          "IDE: Use any IDE preferred (IntelliJ IDEA, Eclipse, etc.) with Spring support enabled."
+        ]
+      },
+      {
+        "heading": "Creating Your First Spring Boot App",
+        "content": [
+          "Using Spring Initializr: The easiest way to bootstrap a new Spring Boot project by selecting dependencies.",
+          "Visit: [Spring Initializr](https://start.spring.io)",
+          "Project Structure: Create a simple controller and run the application.",
+          "@RestController\npublic class HelloController {\n    @GetMapping(\"/hello\")\n    public String sayHello() {\n        return \"Hello, Spring Boot!\";\n    }\n}"
+        ]
+      },
+      {
+        "heading": "Running the Application",
+        "content": [
+          "Use `mvn spring-boot:run` or run the main method in the IDE.",
+          "Access the application at `http://localhost:8080/hello`."
+        ]
+      }
+    ],
+    "bestPractices": [
+      "Use Profiles: Define profiles (e.g., `dev`, `prod`) for different environments to manage configurations effectively.",
+      "Keep Dependencies Minimal: Only include necessary starter dependencies to avoid bloating the application.",
+      "Leverage Actuator Endpoints: Utilize actuator endpoints for health checks and info to monitor the application easily.",
+      "Implement Exception Handling: Define global exception handlers with `@ControllerAdvice` for better error management."
+    ],
+    "conclusion": "Spring Boot revolutionizes Java development by drastically reducing configuration overhead and providing a streamlined approach to building production-ready applications. With its rich ecosystem and community support, mastering Spring Boot opens doors to a wide array of modern development paradigms.",
+    "resources": [
+      {
+        "type": "Link",
+        "text": "Official Spring Boot Documentation",
+        "url": "https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/"
+      },
+      {
+        "type": "Book",
+        "text": "Spring Boot in Action",
+        "author": "Craig Walls"
+      },
+      {
+        "type": "Book",
+        "text": "Spring Microservices in Action",
+        "author": "John Carnell"
+      }
+    ],
+    "sampleProjects": [
+      {
+        "text": "Spring Boot Sample Projects",
+        "url": "https://github.com/spring-projects/spring-boot"
+      }
+    ]
+  }

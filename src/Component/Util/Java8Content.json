@@ -1,0 +1,93 @@
+{
+    "title": "Java 8 Overview",
+    "sections": [
+      {
+        "heading": "What is Java?",
+        "content": "Java is a high-level, object-oriented programming language developed by Sun Microsystems (now part of Oracle Corporation). It is platform-independent, meaning that Java programs can run on any device that has a Java Virtual Machine (JVM)."
+      },
+      {
+        "heading": "Java 8 Release",
+        "content": "Java 8 was released in March 2014 and is one of the most significant updates to the Java programming language, introducing various new features and enhancements."
+      }
+    ],
+    "features": [
+      {
+        "title": "Lambda Expressions",
+        "definition": "A lambda expression is a concise way to express instances of single-method interfaces (functional interfaces).",
+        "syntax": "(parameters) -> expression",
+        "example": "List<String> names = Arrays.asList(\"Alice\", \"Bob\", \"Charlie\");\nnames.forEach(name -> System.out.println(name));"
+      },
+      {
+        "title": "Functional Interfaces",
+        "definition": "An interface with a single abstract method.",
+        "examples": "Runnable, Callable, Comparator",
+        "newFunctionalInterfaces": "Predicate<T>, Function<T,R>, Consumer<T>, Supplier<T>"
+      },
+      {
+        "title": "Stream API",
+        "definition": "The Stream API allows processing sequences of elements (like collections) in a functional style.",
+        "example": "List<String> filtered = names.stream()\n.filter(name -> name.startsWith(\"A\"))\n.collect(Collectors.toList());"
+      },
+      {
+        "title": "Default Methods",
+        "definition": "Interface methods can now have a default implementation.",
+        "why": "To enable new methods in interfaces without breaking existing implementations.",
+        "example": "interface MyInterface {\n    default void myDefaultMethod() {\n        System.out.println(\"Default Method\");\n    }\n}"
+      },
+      {
+        "title": "Method References",
+        "definition": "A shorthand notation of a lambda expression to call a method.",
+        "types": "Static methods, Instance methods of a particular object, Instance methods of an arbitrary object of a particular type",
+        "example": "List<String> names = Arrays.asList(\"Alice\", \"Bob\", \"Charlie\");\nnames.forEach(System.out::println);"
+      },
+      {
+        "title": "Optional Class",
+        "definition": "A container object which may or may not contain a value, used to avoid null references.",
+        "example": "Optional<String> optionalName = Optional.ofNullable(getName());\noptionalName.ifPresent(name -> System.out.println(name));"
+      },
+      {
+        "title": "Nashorn JavaScript Engine",
+        "definition": "A lightweight JavaScript engine integrated into Java 8 to execute JavaScript code.",
+        "example": "ScriptEngineManager manager = new ScriptEngineManager();\nScriptEngine engine = manager.getEngineByName(\"Nashorn\");\nengine.eval(\"print('Hello from JavaScript!');\");"
+      },
+      {
+        "title": "Date and Time API",
+        "definition": "A new date and time API (java.time package) for handling date and time, which is immutable and thread-safe.",
+        "example": "LocalDate today = LocalDate.now();\nLocalDate tomorrow = today.plusDays(1);\nSystem.out.println(tomorrow);"
+      }
+    ],
+    "enhancements": [
+      "Improved Type Inference",
+      "New APIs for Concurrency",
+      "Parallel Array Sorting",
+      "More Annotations and Extensions to existing Frameworks"
+    ],
+    "benefits": [
+      "Simplicity: The syntax is cleaner and more concise due to lambda expressions and method references.",
+      "Performance: The Stream API allows for parallel processing, making data processing more efficient.",
+      "Readability: Functional programming concepts like map, filter, and reduce can make code easier to understand."
+    ],
+    "conclusion": "Java 8 brought transformative changes to the Java programming language, establishing patterns and practices that have influenced many modern programming paradigms. As you develop your website, consider including tutorials, code samples, and interactive elements to engage learners effectively.",
+    "resources": [
+      {
+        "type": "Link",
+        "text": "Oracle Java Documentation",
+        "url": "https://docs.oracle.com/javase/8/docs/"
+      },
+      {
+        "type": "Link",
+        "text": "Java SE 8: Functional Programming",
+        "url": "https://www.oracle.com/java/technologies/javase/jdk8-docs-downloads.html"
+      },
+      {
+        "type": "Book",
+        "text": "Java 8 in Action",
+        "author": "Raoul-Gabriel Tanguy"
+      },
+      {
+        "type": "Book",
+        "text": "Effective Java",
+        "author": "Joshua Bloch (3rd Edition)"
+      }
+    ]
+  }

@@ -1,0 +1,25 @@
+{
+    "subscribe": {
+      "title": "Subscribe",
+      "placeholder": "Enter your email",
+      "buttonText": "Subscribe"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "phone": "+123 456 7890",
+      "email": "contact@letslearn.com"
+    },
+    "social": {
+      "title": "Follow Us",
+      "links": [
+        { "name": "Instagram", "url": "https://www.instagram.com", "icon": "fab fa-instagram" },
+        { "name": "Twitter", "url": "https://www.twitter.com", "icon": "fab fa-twitter" },
+        { "name": "LinkedIn", "url": "https://www.linkedin.com", "icon": "fab fa-linkedin" },
+        { "name": "YouTube", "url": "https://www.youtube.com", "icon": "fab fa-youtube" },
+        { "name": "GitHub", "url": "https://www.github.com", "icon": "fab fa-github" }
+      ]
+    },
+    "copyright": {
+      "text": "copyright © 2023 Let's Learn. All rights reserved."
+    }
+  }

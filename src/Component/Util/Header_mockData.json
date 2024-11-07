@@ -1,0 +1,110 @@
+{
+  "mainHeaders": [
+    {
+      "title": "Java",
+      "subHeaders": [
+        {
+          "title": "OOP",
+          "details": ["Inheritance", "Polymorphism", "Encapsulation"]
+        },
+        {
+          "title": "Concurrency",
+          "details": ["Threads", "Synchronization", "Executors"]
+        }
+      ]
+    },
+    {
+      "title": "Java 8",
+      "subHeaders": [
+        {
+          "title": "Streams",
+          "details": ["Filter", "Map", "Reduce"]
+        },
+        {
+          "title": "Lambdas",
+          "details": ["Syntax", "Functional Interfaces", "Method References"]
+        }
+      ]
+    },
+    {
+      "title": "Spring Boot",
+      "subHeaders": [
+        {
+          "title": "Annotations",
+          "details": ["@RestController", "@Autowired", "@SpringBootApplication"]
+        },
+        {
+          "title": "Microservices",
+          "details": ["Spring Cloud", "Eureka", "Zuul"]
+        }
+      ]
+    },
+    {
+      "title": "Microservices",
+      "subHeaders": [
+        {
+          "title": "Architecture",
+          "details": ["Design Patterns", "Communication", "Resilience"]
+        },
+        {
+          "title": "Design Patterns",
+          "details": ["Singleton", "Factory", "Observer"]
+        }
+      ]
+    },
+    {
+      "title": "DSA",
+      "subHeaders": [
+        {
+          "title": "Algorithms",
+          "details": ["Sorting", "Searching", "Dynamic Programming"]
+        },
+        {
+          "title": "Data Structures",
+          "details": ["Arrays", "Linked Lists", "Trees"]
+        },
+        {
+          "title": "Complexity",
+          "details": ["Time Complexity", "Space Complexity", "Big O Notation"]
+        },
+        {
+          "title": "Recursion",
+          "details": ["Base Case", "Recursive Case", "Stack Overflow"]
+        },
+        {
+          "title": "LeetCode",
+          "details": ["Problems", "Solutions", "Optimization"]
+        }
+      ]
+    },
+    {
+      "title": "Interview Prep",
+      "subHeaders":[
+        {
+          "title": "Java Questions",
+          "details": ["OOP Concepts", "Collections", "Exception Handling"]
+        },
+        {
+          "title": "Spring Boot",
+          "details": ["Annotations", "Microservices", "Security"]
+        },
+        {
+          "title":"Microservices",
+          "details": ["Architecture", "Design Patterns", "Communication"]
+        },
+        {
+          "title": "DSA",
+          "details": ["Algorithms", "Data Structures", "Complexity"]
+        },
+        {
+          "title": "System Design",
+          "details": ["Scalability", "Reliability", "Performance"]
+        },
+        {
+          "title": "Behavioral",
+          "details": ["Teamwork", "Problem-Solving", "Leadership"]
+        }
+      ]
+    }
+  ]
+}

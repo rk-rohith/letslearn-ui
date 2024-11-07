@@ -1,0 +1,115 @@
+/* SpringBootContent.css */
+.springboot-main-content {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: var(--background-color);
+  border-radius: 8px;
+}
+
+.springboot-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.springboot-section {
+  margin-bottom: 40px;
+}
+
+.springboot-section-heading {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+}
+
+.springboot-section-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.springboot-section-list-item {
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.springboot-section-content {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.springboot-features-heading {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.springboot-feature {
+  margin-bottom: 40px;
+}
+
+.springboot-feature-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: var(--accent-color);
+}
+
+.springboot-feature-definition,
+.springboot-feature-how-to-use,
+.springboot-feature-description {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.springboot-feature-example-heading,
+.springboot-feature-maven-heading {
+  font-size: 1.1em;
+  margin-top: 10px;
+  color: var(--secondary-color);
+}
+
+.springboot-feature-example,
+.springboot-feature-maven {
+  background-color: #f4f4f9;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-size: 1em;
+  color: #333;
+}
+
+.springboot-feature-examples,
+.springboot-feature-endpoints {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.springboot-feature-example-item,
+.springboot-feature-endpoint {
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.springboot-feature-link a {
+  color: var(--highlight-color);
+  text-decoration: none;
+}
+
+.springboot-feature-link a:hover {
+  text-decoration: underline;
+}
+
+.springboot-feature-divider {
+  box-sizing: content-box;
+  overflow: hidden;
+  background: transparent;
+  border-bottom: 1px solid hsl(210, 18%, 87%);
+  height: .25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #d0d7de;
+  border: 0;
+}

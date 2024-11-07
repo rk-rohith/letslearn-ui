@@ -1,0 +1,52 @@
+{
+  "title": "LeetCode",
+  "description": "**LeetCode** is a premier online platform dedicated to helping individuals prepare for technical coding interviews. With an extensive collection of coding challenges, LeetCode offers a unique learning environment that allows users to enhance their coding skills, grasp complex algorithm concepts, and gain confidence in their problem-solving abilities.",
+  "keyFeatures": [
+    "**Vast Problem Collection:** Access thousands of problems ranging from easy to hard, covering diverse topics such as data structures, algorithms, and system design.",
+    "**Interactive Coding Environment:** Write, test, and debug your code in a real-time coding environment for an immersive experience.",
+    "**Discussion Forums:** Collaborate with a global community of learners and experts. Ask questions, share solutions, and learn different approaches to problems.",
+    "**Mock Interviews:** Participate in simulated technical interviews to experience the pressure and format of actual interview scenarios."
+  ],
+  "sections": [
+    {
+      "heading": "LeetCode 75",
+      "content": [
+        "**LeetCode 75** is a carefully curated list of 75 essential coding problems designed to forge a solid foundation in coding and problem-solving skills. This comprehensive selection covers crucial topics that are pivotal for technical interviews in various software engineering roles.",
+        "### Why LeetCode 75?",
+        "- **Structured Learning Path:** The list is organized by topic, making it easier to focus your learning on specific areas.",
+        "- **Skill-building Focus:** Each problem is selected based on its importance and relevance, targeting core concepts that are often tested in interviews.",
+        "- **Time-efficient Preparation:** By concentrating on these 75 problems, you can maximize your study efficiency and cover a wide range of critical coding concepts in a shorter amount of time.",
+        "*Get started with LeetCode 75 and take your coding skills to the next level!*"
+      ]
+    },
+    {
+      "heading": "Grind 75",
+      "content": [
+        "**Grind 75** is another exceptional collection of 75 coding problems, curated by the community to emphasize the most frequently asked questions in technical interviews. This resource is a perfect fit for those who are looking for an intensive preparation method.",
+        "### Highlights of Grind 75:",
+        "- **Community-driven Selection:** Problems are sourced from real interview experiences, ensuring that you practice the most pertinent challenges.",
+        "- **Intensive Preparation Focus:** Designed specifically for aspirants needing vigorous review, Grind 75 helps you solidify your coding prowess effectively.",
+        "- **Accessibility:** Each problem is easily accessible, allowing you to practice at your own pace and convenience.",
+        "*Join the Grind 75 community today and elevate your interview readiness!*"
+      ]
+    },
+    {
+      "heading": "Blind 75",
+      "content": [
+        "**Blind 75** is a renowned compilation of 75 coding problems that represent the most critical and frequently addressed queries in technical interviews. It is highly regarded by candidates aiming for efficient preparation.",
+        "### Key Aspects of Blind 75:",
+        "- **Focus on Essential Problems:** This list distills the interview preparation process by concentrating solely on the most important coding challenges.",
+        "- **Effective Time Management:** Designed for busy professionals and students, Blind 75 provides a targeted approach to mastering key concepts without unnecessary distractions.",
+        "- **Widely Recommended:** Trusted by countless successful candidates, Blind 75 serves as a definitive guide for interview preparation.",
+        "*Prepare effectively with Blind 75 and increase your chances of interview success!*"
+      ]
+    }
+  ],
+  "conclusion": {
+    "heading": "Conclusion",
+    "content": [
+      "At our Coding Prep Hub, we understand the importance of comprehensive and effective interview preparation. With resources like LeetCode, LeetCode 75, Grind 75, and Blind 75, you can tailor your learning experience to fit your personal needs. Start your coding journey today and master the skills required to excel in technical interviews!",
+      "*Happy Coding!*"
+    ]
+  }
+}

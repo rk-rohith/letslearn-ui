@@ -1,0 +1,29 @@
+{
+  "introduction": {
+    "title": "Introduction to Java",
+    "description": "Java is a high-level, object-oriented programming language designed for portability across platforms. Its core features include:<br><br>- <b>Platform Independence</b>: Java programs can run on any device with a Java Virtual Machine (JVM).<br>- <b>Object-Oriented</b>: Promotes organized coding through concepts like classes and objects.<br>- <b>Robust and Secure</b>: Strong type checking, exception handling, and a security model help prevent issues.<br>- <b>Automatic Memory Management</b>: Java uses garbage collection for memory management.",
+    "link": "https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html"
+  },
+  "basics": {
+    "title": "Java Basics",
+    "description": "Java Basics encompasses essential elements of the language:<br><br>- <b>Syntax</b>: The set of rules for writing Java code.<br>- <b>Data Types</b>: Java has primitive types (int, float, char, boolean) and non-primitive types (Strings, Arrays).<br>- <b>Variables</b>: Containers for storing data values, defined by a data type.<br>- <b>Operators</b>: Used to perform operations on variables and values, including arithmetic, relational, and logical operations.<br>- <b>Control Flow Statements</b>: Includes if-else statements, loops (for, while, do-while) to control the flow of execution.",
+    "link": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/index.html",
+    "topics": []
+  },
+  "oops": {
+    "title": "Object-Oriented Programming (OOP) in Java",
+    "description": "Java is fundamentally object-oriented, which means it uses certain principles to create modular programs:<br><br>- <b>Classes and Objects</b>: Class is a blueprint for objects; an object is an instance of a class.<br>- <b>Inheritance</b>: Allows a new class to inherit fields and methods from an existing class, promoting code reuse.<br>- <b>Polymorphism</b>: Enables one interface to be used for a general class of actions, allowing methods to do different things based on the object.<br>- <b>Abstraction</b>: Hides complex implementation details and displays only essential features of an object.<br>- <b>Encapsulation</b>: Bundles data (variables) and methods that operate on the data into a single unit or class, restricting access to inner workings.",
+    "link": "https://www.oracle.com/java/technologies/javase/oop.html",
+    "topics": []
+  },
+  "installation": {
+    "title": "Installation of Java",
+    "description": "To start programming in Java, follow installation instructions to download the Java Development Kit (JDK) and set up your environment.",
+    "link": "https://docs.oracle.com/javase/tutorial/java/install/index.html"
+  },
+  "advanced": {
+    "title": "Advanced Java Concepts",
+    "description": "Once comfortable with the basics, explore advanced topics such as Java 8 features (like Lambda Expressions and Streams), Spring Boot for web applications, Microservices architecture, and Data Structures and Algorithms (DSA) for optimizing program efficiency.",
+    "link": "https://www.javatpoint.com/java-tutorial"
+  }
+}

@@ -1,0 +1,62 @@
+/* General styles for the JavaContent component */
+.content {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+/* Section styles */
+.content section {
+  margin-bottom: 40px;
+}
+
+/* Section title styles */
+.content h1,
+.content h2 {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  cursor: pointer; /* Indicate clickable titles */
+}
+
+
+/* Topic styles */
+.content h3 {
+  color: #0a090a; /* Example color for subheadings */
+  margin-top: 20px;
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
+.dark-theme p {
+  color: #f8f8f2; /* Dark theme text color */
+}
+
+.light-theme p {
+  color: #000000; /* Light theme text color */
+}
+
+/* Code container styles */
+.code-container {
+  background-color: #44475a; /* Adjust code container background color */
+  padding: 20px;
+  border-radius: 8px;
+  display: inline-block; /* Ensure the code container only takes the space of the code */
+  max-width: 100%; /* Ensure it doesn't overflow the container */
+  overflow-x: auto;
+}
+
+.code-container .react-code-blocks {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .content {
+    padding: 10px;
+  }
+
+  .code-container {
+    padding: 10px;
+  }
+}
